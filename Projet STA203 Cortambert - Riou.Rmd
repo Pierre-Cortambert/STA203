@@ -21,3 +21,4 @@ cookie <- load("cookie.app.RData")
 str(cookie.app)
 ```
 
+test de changement
