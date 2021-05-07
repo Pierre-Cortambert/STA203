@@ -71,8 +71,14 @@ abline(h=mean(ytrain),lty=2,col="red")
 plot(ytest,main="Jeu de test",xlab="Nombre d'individus")
 abline(h=mean(ytrain),lty=2,col="blue")
 ```
-
-
+##ton code dessus marchait pas sur ma machine
+##j'ai changé mais je sais pas si cette partie est nécessaire
+par(mfrow=c(1,2))
+plot(1:40,ytrain[,1],main="Jeu d'apprentissage",xlab = "Nombre d'individus")
+abline(h=mean(ytrain[,1]),lty=2,col="red")
+plot(1:32,ytest[,1],main="Jeu de test",xlab="Nombre d'individus")
+abline(h=mean(ytrain[,1]),lty=2,col="blue")
+##
 
 ## 2 - Analyse par composantes principales
 ```{r}
